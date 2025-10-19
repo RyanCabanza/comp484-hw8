@@ -2,6 +2,7 @@
 #0f3f3a - Botanical Night
 #3ed9cf - Turquoise
 #f7f9fc - Ghost White
+#abb8c3 - Glen Falls
 #eb9486 - Coral Pink
 */
 
@@ -63,6 +64,9 @@ a{
     font-weight: 800;
     font-family: "Montserrat", serif;
 }
+a:hover{
+    color: #abb8c3;
+}
 
 /* Navigation
 ----------------------------------- */
@@ -117,7 +121,7 @@ footer{
 
 /* Work Experience
 ------------------------------------*/
-.workExperience{
+#workExperience{
     background: #3ed9cf;
     h2{
         padding-bottom: 25px;
@@ -127,8 +131,11 @@ footer{
 
 /* Education
 ------------------------------------*/
-.education{
-    background: #f7f9fc;
+#education{
+    /*background-color: #f7f9fc;*/
+    background: linear-gradient(rgba(235, 148, 134, 0.5), rgba(247, 249, 252, 0.9)),
+    url(../_images/palm_tree_bg.jpeg) 
+    no-repeat fixed 0px 0px / cover;
     h2{
         padding-bottom: 25px;
     }
