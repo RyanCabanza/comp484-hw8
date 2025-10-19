@@ -1,8 +1,8 @@
 /* Color Palette
 #0f3f3a - Botanical Night
-#3ed9cf - Fresh Turquoise
+#3ed9cf - Turquoise
 #f7f9fc - Ghost White
-#abb8c3 - Glen Falls
+#eb9486 - Coral Pink
 */
 
 /* Global styles 
@@ -10,7 +10,6 @@
 body {
     font-family: "Merriweather", sans-serif;
     margin: 0;
-
 }
 h1, h2, h3{
     font-family: "Montserrat", serif;
@@ -52,11 +51,37 @@ html{
     float: left;
     padding-right: 3%;
     min-height: 175px;
+    min-width: 190px;
 }
 .column-wide{
     width: 70%;
     float: left;
     min-height: 225px;
+}
+a{
+    color: #eb9486;
+    font-weight: 800;
+    font-family: "Montserrat", serif;
+}
+
+/* Navigation
+----------------------------------- */
+nav{
+    background: #f7f9fc;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.display{
+    text-align: center;
+}
+.display a{
+    padding: 25px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 /* Header & Footer 
@@ -78,10 +103,9 @@ footer{
     text-align: center;
 }
 .contact-info a{
-    color: #abb8c3;
-    padding-right: 10px;
+    padding-right: 30px;
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 30px;
     text-decoration: none;
 }
 .profile-img{
@@ -107,5 +131,38 @@ footer{
     background: #f7f9fc;
     h2{
         padding-bottom: 25px;
+    }
+}
+
+
+/* I added media queries so that the nav doesn't 
+cut off page content in different screen sizes */
+
+/* Media Queries
+----------------------------------- */
+
+/* X-Large devices */
+@media (min-width: 1200px) { 
+    body{
+        padding-top: 70px;
+    }
+}
+/* Large devices */
+@media (max-width: 1200px) { 
+    body{
+        padding-top: 70px;
+    }
+}
+/* Medium devices */
+@media (max-width: 839px) { 
+    body{
+        padding-top: 140px;
+    }
+}
+
+/* Small devices */
+@media (max-width: 502px) { 
+    body{
+        padding-top: 209px;
     }
 }
