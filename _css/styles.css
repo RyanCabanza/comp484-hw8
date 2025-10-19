@@ -1,0 +1,111 @@
+/* Color Palette
+#0f3f3a - Botanical Night
+#3ed9cf - Fresh Turquoise
+#f7f9fc - Ghost White
+#abb8c3 - Glen Falls
+*/
+
+/* Global styles 
+------------------------------------*/
+body {
+    font-family: "Merriweather", sans-serif;
+    margin: 0;
+
+}
+h1, h2, h3{
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+li{
+    line-height: 40px;
+}
+p{
+    line-height: 30px;
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 24px;
+    margin-top: 0;
+}
+section, header, footer{
+    padding: 25px;
+}
+h1{
+    color: #3ed9cf;
+}
+.content-wrap{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.column-narrow{
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+.column-wide{
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Header & Footer 
+------------------------------------*/
+header, footer{
+    background: #0f3f3a;
+    color: #f7f9fc;
+}
+header h2{
+    color: #f7f9fc;
+}
+header h1, h2{
+    margin: 0;
+}
+footer h2{
+    color: #3ed9cf;
+}
+footer{
+    text-align: center;
+}
+.contact-info a{
+    color: #abb8c3;
+    padding-right: 10px;
+    display: inline-block;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.profile-img{
+    /*width: 300px;
+    float: left;
+    margin-right: 30px;*/
+    border-radius: 50%;
+}
+
+/* Work Experience
+------------------------------------*/
+.workExperience{
+    background: #3ed9cf;
+    h2{
+        padding-bottom: 25px;
+    }
+}
+
+
+/* Education
+------------------------------------*/
+.education{
+    background: #f7f9fc;
+    h2{
+        padding-bottom: 25px;
+    }
+}
